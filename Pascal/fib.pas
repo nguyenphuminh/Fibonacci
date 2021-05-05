@@ -1,17 +1,10 @@
 program fibonacci;
 
 function fib(n:longint):longint;
-var n1,n2,n3:longint;
 begin
-    n1:=0;
-    n2:=1;
-    n3:=0;
-    while n3 <= n do begin
-        n3:=n1+n2;
-        n1:=n2;
-        n2:=n3;
-    end;
-    exit(n3);
+    if n < 2 then begin
+        fib:=n;
+    end else fib:=fib(n-1) + fib(n-2);
 end;
 
 begin

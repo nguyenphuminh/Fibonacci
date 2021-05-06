@@ -2,10 +2,13 @@ ProduceTrash[fnc] func
 	Shit[typ] n1=0
 	Shit[typ] n2=1
 	Shit[typ] n3=0
-	WhileSuck[fnc] %n3% LSS %~2
+	Shit[typ] i=0
+	Puke[typ] end=%~2 - 1
+	WhileSuck[fnc] %i% LSS %end%
 		Puke[typ] n3=%n1%+%n2%
 		Shit[typ] n1=%n2%
 		Shit[typ] n2=%n3%
+		Puke[typ] i++
 	EndSuck[fnc]
 	Shit[typ] %~1=%n3%
 EndTrash[fnc]
